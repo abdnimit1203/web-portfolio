@@ -8,12 +8,18 @@ body{
 h1{
     font-size: 2em;
 }
-
+h2{
+    font-size: 1.7em;
+}
+p{
+    color: dimgrey;
+}
 .half-width{
     width: 40%;
     float: left;
     margin-left: 5%;
     padding-left: 2%;
+    position: inherit;
 }
 .half-width img{
     width: 100%;
@@ -25,21 +31,37 @@ h1{
     background-color: blueviolet;
     background-image: linear-gradient(45deg, rgb(152, 61, 236), rgb(68, 8, 124));
 }
-.button{
-    padding: 8px 30px;
-    text-decoration: none;
-    border-radius: 5%;
-    border-color: blueviolet;
+.orange{
+    color: white;
+    background-color: orange;
+    background-image: linear-gradient(45deg, rgb(255, 142, 98), tomato);
+}
+button{
     font-family: 'Poppins', sans-serif;
 }
-.button:hover{
-    background-image: linear-gradient(90deg, rgb(152, 61, 236), rgb(68, 8, 124));
-    font-size: 1.1em;
+.button{
+    margin-top: 30px;
+    padding: 8px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    border-color: blueviolet;
+}
+.purple:hover{
+    background-image: linear-gradient(90deg, rgb(47, 5, 87), rgb(68, 8, 124)); 
+}
+.orange:hover{
+    background-image: linear-gradient(90deg, rgb(241, 86, 24), tomato);
 }
 .top-banner{
     background-repeat: no-repeat;
     background-image: url(images/top-banner.png);
 }
 section{
-    height: 600px;
+    height: 500px;
+    padding-bottom: 150px;
+}
+.dream-area{
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
