@@ -38,16 +38,29 @@ p{
     position: relative;
    
 }
-.purple{
-    color: white;
-    background-color: blueviolet;
-    background-image: linear-gradient(45deg, rgb(152, 61, 236), rgb(68, 8, 124));
+.green{
+    color: rgb(15, 15, 15);
+    background-color: rgb(39, 150, 48);
+    background-image: linear-gradient(45deg, rgb(54, 218, 90), rgb(12, 138, 22));
+    font-weight: bold;
 }
 .orange{
     color: white;
     background-color: orange;
     background-image: linear-gradient(45deg, rgb(255, 142, 98), tomato);
 }
+.purple{
+    color: white;
+    background-color: blueviolet;
+    background-image: linear-gradient(45deg, rgb(152, 61, 236), rgb(68, 8, 124));
+}
+.yellow{
+    color: rgb(15, 15, 15);
+    background-color: rgb(255, 251, 0);
+    background-image: linear-gradient(45deg, rgb(231, 212, 38), rgb(175, 172, 12));
+    font-weight: bold;
+}
+
 button{
     font-family: 'Poppins', sans-serif;
 }
@@ -58,11 +71,21 @@ button{
     border-radius: 5px;
     border-color: blueviolet;
 }
+
+.green:hover{
+    color: aliceblue;
+    background-image: linear-gradient(90deg, rgb(54, 218, 90), rgb(12, 138, 22));
+}
+
+.orange:hover{
+    background-image: linear-gradient(90deg, rgb(241, 86, 24), tomato);
+}
 .purple:hover{
     background-image: linear-gradient(90deg, rgb(47, 5, 87), rgb(68, 8, 124)); 
 }
-.orange:hover{
-    background-image: linear-gradient(90deg, rgb(241, 86, 24), tomato);
+.yellow:hover{
+    color: aliceblue;
+    background-image: linear-gradient(90deg, rgb(231, 212, 38), rgb(175, 172, 12));
 }
 .top-banner{
     background-repeat: no-repeat;
@@ -76,4 +99,28 @@ section{
     background-image: url(images/dream-bg.png);
     background-repeat: no-repeat;
     background-position: right;
+}
+.experience{
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.single-experience{
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 5px;
+    height: 80%;
+    background-color: #fff;
+}
+#fullstack{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg , lightsalmon, tomato);
+    border-image-slice: 1;
+}
+#front-end{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg , blue, cyan);
+    border-image-slice: 1;
+}
+footer p{
+    text-align: center;
 }
