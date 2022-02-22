@@ -124,3 +124,12 @@ section{
 footer p{
     text-align: center;
 }
+@media screen and (max-width: 800px) {
+    .half-width, .button, .single-experience {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    section{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+  }
