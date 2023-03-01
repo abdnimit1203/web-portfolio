@@ -121,15 +121,92 @@ section{
     border-image: linear-gradient(180deg , blue, cyan);
     border-image-slice: 1;
 }
-footer p{
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+ }
+.tag-section p{
+    position: fixed;
+    left: 0;
+    bottom: 0;
     text-align: center;
 }
-@media screen and (max-width: 800px) {
+.row{
+    padding: 2%;
+}
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 16px;
+    margin: 2%;
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 5px;
+    height: 80%;
+    background-color: #fff;
+    border-bottom: 7px solid;
+    border-image: linear-gradient(90deg , blue, cyan);
+    border-image-slice: 1;
+  }
+
+  .project1{
+    border-image: linear-gradient(90deg , blue, cyan);
+    border-image-slice: 1;
+  }
+  .project2{
+    border-image: linear-gradient(90deg , #d64949, #db32b1);
+    border-image-slice: 1;
+  }
+  .project3{
+    border-image: linear-gradient(90deg , #1ab43b, #35ff3f);
+    border-image-slice: 1;
+  }
+  .project4{
+    border-image: linear-gradient(90deg , #b9b713, #fffc35);
+    border-image-slice: 1;
+  }
+  .content img{
+    width: 20px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  }
+
+  @media screen and (max-width: 800px) {
     .half-width, .button, .single-experience {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
-    section{
-        padding-top: 10%;
-        padding-bottom: 10%;
+  }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .half-width, .button, .single-experience {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    .column {
+      width: 100%;
+    }
+    .row{
+        padding: 5%;
     }
   }
