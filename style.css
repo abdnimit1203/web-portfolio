@@ -184,7 +184,58 @@ section{
   .content img{
     width: 20px;
   }
+
+  /* -------------Contact section--------------- */
+  /* Header/Logo Title */
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #303030;
+    color: white;
+    font-size: 30px;
+  }
+  .contact{
+    max-height: 200px;
+  }
   
+/* -----------------------SIDE NAVBAR----------------------------- */
+#mySidenav a {
+    position: fixed;
+    left: -80px;
+    transition: 0.3s;
+    padding: 5px;
+    width: 95px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    border-radius: 0 15px 5px 0;
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #about {
+    top: 360px;
+    background-color: #51ce62 ;
+  }
+  
+  #experience {
+    top: 420px;
+    background-color: #f44336;
+  }
+  
+  #projects {
+    top: 480px;
+    background-color: #602dee;
+  }
+  
+  #contact {
+    top: 540px;
+    background-color: #555
+  }
+
+
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 900px) {
     .column {
@@ -209,4 +260,12 @@ section{
     .row{
         padding: 5%;
     }
+    .contact .header{
+        font-size: 16px;
+        max-height: auto;
+      }
+      .contact .header p{
+        font-size: 14px;
+        max-height: auto;
+      }
   }
