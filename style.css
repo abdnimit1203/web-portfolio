@@ -22,6 +22,11 @@ h1{
 }
 h2{
     font-size: 1.7em;
+    
+}
+.header-tag{
+  padding-left: 20px; 
+  width: 4%;
 }
 p{
     color: dimgrey;
@@ -197,6 +202,17 @@ section{
   .contact{
     max-height: 200px;
   }
+  .mail{
+      font-size: 16px;
+      color: rgb(206, 206, 206);
+      cursor: pointer;
+  }
+  .gmail{
+    width: 5%;
+    padding: 0%;
+    margin: -1;
+  }
+  
   
 /* -----------------------SIDE NAVBAR----------------------------- */
 #mySidenav a {
@@ -241,19 +257,38 @@ section{
     .column {
       width: 50%;
     }
+    section{
+      
+      height: auto;
+      padding-bottom: 0;
   }
+  .single-experience{
+    border-radius: 5px;
+    height: auto;
+    width: fit-content;
+    margin: 20px;
+}
+.header-tag{
+  padding: 20px; 
+}
   }
+  
 
   @media screen and (max-width: 800px) {
     .half-width, .button, .single-experience {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      height: auto;
+      width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
     }
   }
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .half-width, .button, .single-experience {
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-      }
+    
+      .single-experience{
+        border-radius: 5px;
+        height: auto;
+        width: fit-content;
+        margin: 16px;
+    }
     .column {
       width: 100%;
     }
@@ -267,5 +302,7 @@ section{
       .contact .header p{
         font-size: 14px;
         max-height: auto;
+        word-wrap: break-word;
       }
+      
   }

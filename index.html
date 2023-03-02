@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="images/dream-bg.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>ABDullah Ibne Ali(UCon)</title>
+    <title>Hello 2 ABDullah Ibne Ali's World</title>
 </head>
 <body>
     <section class="top-banner" id="1">
@@ -36,7 +36,7 @@
             <img src="images/abd3-circle-ylw.png" alt="Photo of owner">
         </div>
         <div class="half-width ver-center">
-            <h2>Life Goal</h1>
+            <h2>Life Goal</h2>
             <h3>Become a Fullstack Web Developer</h3>
             <p>I already learned the basic HTML and CSS. I can build any simple website. I can even teach how to make simple website. I am learning ReactJS. Hopefully by middle of the year i will complete learning. Building demo websites , showcasing them in my portfolio is my target. Then i will learn Nodejs.</p>
             <a class="button orange" target="_blank" href="https://drive.google.com/file/d/1v9ZpUgO0dlh2TIRLgcoO6-LCRpSBXJww/view?usp=sharing">Download RESUME</a>
@@ -45,7 +45,7 @@
     
     <!--------------------EXPERIENCE---------------------------->
     <section class="experience" id="2">
-        <h2 style="padding-left: 20px; width: 4%;">Experience</h2>
+        <h2 class="header-tag">Experience</h2>
         <div id="fullstack" class="half-width single-experience">
             <h2>PSD to HTML</h2>
             <h3 class="name-highlight">2019 - present | Wordpress and web developer</h3>
@@ -61,7 +61,7 @@
 
     <!--------------------Projects---------------------------->
     <section class="projects" id="3">
-        <h2 style="padding-left: 20px; width: 4%;">Projects</h2>
+        <h2 class="header-tag">Projects</h2>
         <div class="row">
             <div class="column">
               <div class="content project1">
@@ -102,7 +102,9 @@
         <div class="header">
             <h1>Contact me</h1>
             <p>For business or professional purpose.</p>
-            <p style="font-size: 16px;color: rgb(206, 206, 206);">abdullah.Ibneali152pro@gmail.com</p>
+            <img src="images/gmail.png" alt="gmail" class="gmail">
+            <p class="mail" id="text" onclick="copyElementText(this.id)">abdullah.Ibneali152pro@gmail.com</p>
+
           </div>
     </section>
     <div id="mySidenav" class="sidenav">
@@ -112,7 +114,22 @@
         <a href="#4" id="contact">Contact</a>
       </div>
 
+<script>
+  console.log("Welcome to my Portfolio!");
 
+//click to copy function
+
+  function copyElementText(id) {
+    var text = document.getElementById(id).innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+    alert("Mail copied!")
+}
+</script>
    
 </body>
 </html>
