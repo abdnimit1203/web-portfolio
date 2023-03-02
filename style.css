@@ -206,10 +206,15 @@ section{
       cursor: pointer;
   }
   .gmail{
+    transition: all 0.3s linear;
     width: 5%;
     padding: 0%;
     margin: -1;
   }
+  .gmail:hover{
+    transform: scale(1.2);
+  }
+
   
   
 /* -----------------------SIDE NAVBAR----------------------------- */
