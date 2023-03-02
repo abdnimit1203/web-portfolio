@@ -21,12 +21,10 @@ h1{
     font-size: 2em;
 }
 h2{
-    font-size: 1.7em;
-    
+    font-size: 1.7em;   
 }
 .header-tag{
-  padding-left: 20px; 
-  width: 4%;
+  margin: 7%;
 }
 p{
     color: dimgrey;
@@ -268,9 +266,6 @@ section{
     width: fit-content;
     margin: 20px;
 }
-.header-tag{
-  padding: 20px; 
-}
   }
   
 
@@ -288,14 +283,18 @@ section{
         height: auto;
         width: fit-content;
         margin: 16px;
-    }
-    .column {
-      width: 100%;
-    }
-    .row{
-        padding: 5%;
-    }
-    .contact .header{
+      }
+      section{
+        display: flex;
+        flex-direction: column;
+      }
+      .column {
+        width: 100%;
+      }
+      .row{
+          padding: 5%;
+      }
+      .contact .header{
         font-size: 16px;
         max-height: auto;
       }
