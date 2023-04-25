@@ -12,6 +12,9 @@
     <title>ABDullah Ibne Ali's Portfolio</title>
 </head>
 <body>
+
+    <div id="preloader"></div>
+
     <section class="top-banner" id="1">
         <div class="half-width left-half">
             <h1>Welcome to</h1>
@@ -136,6 +139,13 @@
     document.body.removeChild(elem);
     alert("Mail copied!")
 }
+
+ var loader = document.getElementById("preloader");
+
+ window.addEventListener("load", function(){
+    loader.style.display= "none";
+ });
+
 </script>
    
 </body>
